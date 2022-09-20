@@ -41,7 +41,6 @@ cuantos_doc (x:xs) c | x == Docente c = 1 + cuantos_doc xs c
 -- 3) d)
 
 cuantos_doc' :: [Persona] -> Cargo -> Int
-cuantos_doc' [] _ = 0
 cuantos_doc' xs c = length (filter (==Docente c) xs)
 
 -- 4) a)
