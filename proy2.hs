@@ -48,8 +48,8 @@ cuantos_doc' xs c = length (filter (==Docente c) xs)
 primerElemento :: [a] -> Maybe a
 primerElemento [] = Nothing
 primerElemento (x:_) = Just x
--- 5)
 
+-- 5)
 data Cola = VaciaC | Encolada Persona Cola deriving (Show)
 
 -- a) 1)
